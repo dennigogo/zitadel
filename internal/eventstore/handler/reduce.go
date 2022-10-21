@@ -1,16 +1,16 @@
 package handler
 
-import "github.com/zitadel/zitadel/internal/eventstore"
+import "github.com/dennigogo/zitadel/internal/eventstore"
 
-//EventReducer represents the required data
-//to work with events
+// EventReducer represents the required data
+// to work with events
 type EventReducer struct {
 	Event  eventstore.EventType
 	Reduce Reduce
 }
 
-//EventReducer represents the required data
-//to work with aggregates
+// EventReducer represents the required data
+// to work with aggregates
 type AggregateReducer struct {
 	Aggregate     eventstore.AggregateType
 	EventRedusers []EventReducer

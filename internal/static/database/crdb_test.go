@@ -13,7 +13,7 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/zitadel/zitadel/internal/static"
+	"github.com/dennigogo/zitadel/internal/static"
 )
 
 var (

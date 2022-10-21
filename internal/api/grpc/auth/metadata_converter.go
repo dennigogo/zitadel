@@ -1,11 +1,11 @@
 package auth
 
 import (
-	"github.com/zitadel/zitadel/internal/api/grpc/metadata"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/pkg/grpc/auth"
+	"github.com/dennigogo/zitadel/internal/api/grpc/metadata"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/pkg/grpc/auth"
 )
 
 func BulkSetMetadataToDomain(req *auth.BulkSetMyMetadataRequest) []*domain.Metadata {

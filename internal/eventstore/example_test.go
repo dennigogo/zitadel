@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
-	"github.com/zitadel/zitadel/internal/eventstore/repository/sql"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository/sql"
 )
 
 // ------------------------------------------------------------

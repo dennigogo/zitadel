@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/database"
-	errs "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/database"
+	errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 var (

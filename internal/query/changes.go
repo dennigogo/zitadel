@@ -6,15 +6,15 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/repository/user"
 
-	"github.com/zitadel/zitadel/internal/repository/project"
+	"github.com/dennigogo/zitadel/internal/repository/project"
 
-	"github.com/zitadel/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/repository/org"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type Changes struct {

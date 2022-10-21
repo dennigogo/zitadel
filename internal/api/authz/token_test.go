@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 func Test_VerifyAccessToken(t *testing.T) {

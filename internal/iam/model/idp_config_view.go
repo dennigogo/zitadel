@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errors "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errors "github.com/dennigogo/zitadel/internal/errors"
 
 	"time"
 )

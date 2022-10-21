@@ -3,11 +3,11 @@ package admin
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	idp_grpc "github.com/zitadel/zitadel/internal/api/grpc/idp"
-	object_pb "github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/query"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	idp_grpc "github.com/dennigogo/zitadel/internal/api/grpc/idp"
+	object_pb "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/query"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
 )
 
 func (s *Server) GetIDPByID(ctx context.Context, req *admin_pb.GetIDPByIDRequest) (*admin_pb.GetIDPByIDResponse, error) {

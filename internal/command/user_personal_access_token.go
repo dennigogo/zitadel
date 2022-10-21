@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/repository/user"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 func (c *Commands) AddPersonalAccessToken(ctx context.Context, userID, resourceOwner string, expirationDate time.Time, scopes []string, allowedUserType domain.UserType) (*domain.Token, string, error) {

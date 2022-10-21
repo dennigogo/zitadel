@@ -1,6 +1,6 @@
 package action
 
-import "github.com/zitadel/zitadel/internal/eventstore"
+import "github.com/dennigogo/zitadel/internal/eventstore"
 
 const (
 	AggregateType    = "action"

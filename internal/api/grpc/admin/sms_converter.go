@@ -1,12 +1,12 @@
 package admin
 
 import (
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/notification/channels/twilio"
-	"github.com/zitadel/zitadel/internal/query"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
-	settings_pb "github.com/zitadel/zitadel/pkg/grpc/settings"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/notification/channels/twilio"
+	"github.com/dennigogo/zitadel/internal/query"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
+	settings_pb "github.com/dennigogo/zitadel/pkg/grpc/settings"
 )
 
 func listSMSConfigsToModel(req *admin_pb.ListSMSProvidersRequest) (*query.SMSConfigsSearchQueries, error) {

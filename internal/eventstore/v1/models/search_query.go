@@ -5,7 +5,7 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type SearchQueryFactory struct {
@@ -46,7 +46,7 @@ const (
 	columnsCount
 )
 
-//FactoryFromSearchQuery is deprecated because it's for migration purposes. use NewSearchQueryFactory
+// FactoryFromSearchQuery is deprecated because it's for migration purposes. use NewSearchQueryFactory
 func FactoryFromSearchQuery(q *SearchQuery) *SearchQueryFactory {
 	factory := &SearchQueryFactory{
 		columns: q.Columns,

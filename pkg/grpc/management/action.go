@@ -1,6 +1,6 @@
 package management
 
-import "github.com/zitadel/zitadel/internal/api/grpc/server/middleware"
+import "github.com/dennigogo/zitadel/internal/api/grpc/server/middleware"
 
 func (r *ListFlowTypesResponse) Localizers() (localizers []middleware.Localizer) {
 	if r == nil {

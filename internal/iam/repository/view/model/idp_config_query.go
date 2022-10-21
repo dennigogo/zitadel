@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	iam_model "github.com/zitadel/zitadel/internal/iam/model"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/domain"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/model"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 type IDPConfigSearchRequest iam_model.IDPConfigSearchRequest

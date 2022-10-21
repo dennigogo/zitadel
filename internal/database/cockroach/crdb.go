@@ -1,7 +1,7 @@
 package cockroach
 
 import (
-	"github.com/zitadel/zitadel/internal/database/dialect"
+	"github.com/dennigogo/zitadel/internal/database/dialect"
 )
 
 func init() {

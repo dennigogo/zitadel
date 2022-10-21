@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type Token struct {

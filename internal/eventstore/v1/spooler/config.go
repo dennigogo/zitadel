@@ -5,9 +5,9 @@ import (
 
 	"github.com/zitadel/logging"
 
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/query"
-	"github.com/zitadel/zitadel/internal/id"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/query"
+	"github.com/dennigogo/zitadel/internal/id"
 )
 
 type Config struct {

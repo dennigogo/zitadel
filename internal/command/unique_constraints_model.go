@@ -5,16 +5,16 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/idpconfig"
-	"github.com/zitadel/zitadel/internal/repository/instance"
-	"github.com/zitadel/zitadel/internal/repository/member"
-	"github.com/zitadel/zitadel/internal/repository/org"
-	"github.com/zitadel/zitadel/internal/repository/policy"
-	"github.com/zitadel/zitadel/internal/repository/project"
-	"github.com/zitadel/zitadel/internal/repository/user"
-	"github.com/zitadel/zitadel/internal/repository/usergrant"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/idpconfig"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/repository/member"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/repository/policy"
+	"github.com/dennigogo/zitadel/internal/repository/project"
+	"github.com/dennigogo/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/repository/usergrant"
 )
 
 type UniqueConstraintReadModel struct {

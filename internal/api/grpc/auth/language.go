@@ -3,8 +3,8 @@ package auth
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/grpc/text"
-	auth_pb "github.com/zitadel/zitadel/pkg/grpc/auth"
+	"github.com/dennigogo/zitadel/internal/api/grpc/text"
+	auth_pb "github.com/dennigogo/zitadel/pkg/grpc/auth"
 )
 
 func (s *Server) GetSupportedLanguages(ctx context.Context, req *auth_pb.GetSupportedLanguagesRequest) (*auth_pb.GetSupportedLanguagesResponse, error) {

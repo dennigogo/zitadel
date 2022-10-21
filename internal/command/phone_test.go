@@ -3,7 +3,7 @@ package command
 import (
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 func TestFormatPhoneNumber(t *testing.T) {

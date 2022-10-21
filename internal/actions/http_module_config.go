@@ -4,8 +4,8 @@ import (
 	"net"
 	"reflect"
 
+	z_errs "github.com/dennigogo/zitadel/internal/errors"
 	"github.com/mitchellh/mapstructure"
-	z_errs "github.com/zitadel/zitadel/internal/errors"
 )
 
 func SetHTTPConfig(config *HTTPConfig) {

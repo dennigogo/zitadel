@@ -1,9 +1,9 @@
 package model
 
 import (
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/crypto"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type OrgDomain struct {

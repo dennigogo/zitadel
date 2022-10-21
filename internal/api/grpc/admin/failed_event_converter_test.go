@@ -3,9 +3,9 @@ package admin
 import (
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/test"
-	"github.com/zitadel/zitadel/internal/view/model"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
+	"github.com/dennigogo/zitadel/internal/test"
+	"github.com/dennigogo/zitadel/internal/view/model"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
 )
 
 func TestFailedEventsToPbFields(t *testing.T) {

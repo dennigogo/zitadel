@@ -5,7 +5,7 @@ import (
 
 	"github.com/zitadel/logging"
 
-	iam_model "github.com/zitadel/zitadel/internal/iam/model"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/model"
 )
 
 const (

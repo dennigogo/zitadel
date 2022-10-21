@@ -3,9 +3,9 @@ package admin
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	policy_grpc "github.com/zitadel/zitadel/internal/api/grpc/policy"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	policy_grpc "github.com/dennigogo/zitadel/internal/api/grpc/policy"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
 )
 
 func (s *Server) GetPasswordAgePolicy(ctx context.Context, req *admin_pb.GetPasswordAgePolicyRequest) (*admin_pb.GetPasswordAgePolicyResponse, error) {

@@ -3,14 +3,14 @@ package command
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/crypto"
 
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 	"github.com/zitadel/logging"
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/repository/user"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
 )
 
 func (c *Commands) ImportHumanOTP(ctx context.Context, userID, userAgentID, resourceowner string, key string) error {

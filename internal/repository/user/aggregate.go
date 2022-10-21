@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 )
 
 const (

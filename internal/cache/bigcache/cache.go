@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	a_cache "github.com/allegro/bigcache"
+	"github.com/dennigogo/zitadel/internal/errors"
 	"github.com/zitadel/logging"
-	"github.com/zitadel/zitadel/internal/errors"
 )
 
 type Bigcache struct {

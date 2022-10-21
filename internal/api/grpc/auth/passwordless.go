@@ -5,15 +5,15 @@ import (
 
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	user_grpc "github.com/zitadel/zitadel/internal/api/grpc/user"
-	"github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/api/ui/login"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
-	auth_pb "github.com/zitadel/zitadel/pkg/grpc/auth"
-	user_pb "github.com/zitadel/zitadel/pkg/grpc/user"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	user_grpc "github.com/dennigogo/zitadel/internal/api/grpc/user"
+	"github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/api/ui/login"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
+	auth_pb "github.com/dennigogo/zitadel/pkg/grpc/auth"
+	user_pb "github.com/dennigogo/zitadel/pkg/grpc/user"
 )
 
 func (s *Server) ListMyPasswordless(ctx context.Context, _ *auth_pb.ListMyPasswordlessRequest) (*auth_pb.ListMyPasswordlessResponse, error) {

@@ -1,14 +1,14 @@
 package view
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 
 	"github.com/jinzhu/gorm"
 
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	usr_model "github.com/zitadel/zitadel/internal/user/model"
-	"github.com/zitadel/zitadel/internal/user/repository/view/model"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	usr_model "github.com/dennigogo/zitadel/internal/user/model"
+	"github.com/dennigogo/zitadel/internal/user/repository/view/model"
 )
 
 func ExternalIDPByExternalUserIDAndIDPConfigID(db *gorm.DB, table, externalUserID, idpConfigID, instanceID string) (*model.ExternalIDPView, error) {

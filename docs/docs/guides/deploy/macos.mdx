@@ -27,14 +27,14 @@ brew install zitadel/tap/zitadel
 
 ### Download from GitHub
 
-Download the ZITADEL release according to your architecture from [Github](https://github.com/zitadel/zitadel/releases/latest)
+Download the ZITADEL release according to your architecture from [Github](https://github.com/dennigogo/zitadel/releases/latest)
 
 ## Unpack the archive
 move to your download location and unpack the archive
 
 ```bash
 #unpack and copy to /usr/local/bin
-LATEST=$(curl -i https://github.com/zitadel/zitadel/releases/latest | grep location: | cut -d '/' -f 8 | tr -d '\r'); wget -qO-  https://github.com/zitadel/zitadel/releases/download/$LATEST/zitadel_Darwin_$(uname -m).tar.gz  | tar -xJ zitadel && sudo mv zitadel /usr/local/bin
+LATEST=$(curl -i https://github.com/dennigogo/zitadel/releases/latest | grep location: | cut -d '/' -f 8 | tr -d '\r'); wget -qO-  https://github.com/dennigogo/zitadel/releases/download/$LATEST/zitadel_Darwin_$(uname -m).tar.gz  | tar -xJ zitadel && sudo mv zitadel /usr/local/bin
 ```
 
 ## Run ZITADEL

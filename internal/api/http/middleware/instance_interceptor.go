@@ -11,10 +11,10 @@ import (
 	"github.com/zitadel/logging"
 	"golang.org/x/text/language"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	caos_errors "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/i18n"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	caos_errors "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/i18n"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 type instanceInterceptor struct {

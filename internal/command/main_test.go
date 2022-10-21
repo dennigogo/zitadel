@@ -9,17 +9,17 @@ import (
 	"github.com/golang/mock/gomock"
 	"golang.org/x/text/language"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
-	"github.com/zitadel/zitadel/internal/eventstore/repository/mock"
-	action_repo "github.com/zitadel/zitadel/internal/repository/action"
-	iam_repo "github.com/zitadel/zitadel/internal/repository/instance"
-	key_repo "github.com/zitadel/zitadel/internal/repository/keypair"
-	"github.com/zitadel/zitadel/internal/repository/org"
-	proj_repo "github.com/zitadel/zitadel/internal/repository/project"
-	usr_repo "github.com/zitadel/zitadel/internal/repository/user"
-	"github.com/zitadel/zitadel/internal/repository/usergrant"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository/mock"
+	action_repo "github.com/dennigogo/zitadel/internal/repository/action"
+	iam_repo "github.com/dennigogo/zitadel/internal/repository/instance"
+	key_repo "github.com/dennigogo/zitadel/internal/repository/keypair"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	proj_repo "github.com/dennigogo/zitadel/internal/repository/project"
+	usr_repo "github.com/dennigogo/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/repository/usergrant"
 )
 
 type expect func(mockRepository *mock.MockRepository)

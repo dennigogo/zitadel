@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type Token struct {

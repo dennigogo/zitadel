@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/view/model"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/view/model"
 )
 
 type GeneralSearchRequest model.GeneralSearchRequest

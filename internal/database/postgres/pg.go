@@ -5,7 +5,7 @@ import (
 	//sql import
 	_ "github.com/jackc/pgx/v4/stdlib"
 
-	"github.com/zitadel/zitadel/internal/database/dialect"
+	"github.com/dennigogo/zitadel/internal/database/dialect"
 )
 
 func init() {

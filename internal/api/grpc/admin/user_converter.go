@@ -4,9 +4,9 @@ import (
 	"github.com/zitadel/logging"
 	"golang.org/x/text/language"
 
-	user_grpc "github.com/zitadel/zitadel/internal/api/grpc/user"
-	"github.com/zitadel/zitadel/internal/command"
-	admin_grpc "github.com/zitadel/zitadel/pkg/grpc/admin"
+	user_grpc "github.com/dennigogo/zitadel/internal/api/grpc/user"
+	"github.com/dennigogo/zitadel/internal/command"
+	admin_grpc "github.com/dennigogo/zitadel/pkg/grpc/admin"
 )
 
 func setUpOrgHumanToCommand(human *admin_grpc.SetUpOrgRequest_Human) command.AddHuman {

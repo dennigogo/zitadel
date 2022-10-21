@@ -4,13 +4,13 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/zitadel/zitadel/internal/authz/repository"
-	"github.com/zitadel/zitadel/internal/authz/repository/eventsourcing/eventstore"
-	authz_view "github.com/zitadel/zitadel/internal/authz/repository/eventsourcing/view"
-	"github.com/zitadel/zitadel/internal/crypto"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/id"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/authz/repository"
+	"github.com/dennigogo/zitadel/internal/authz/repository/eventsourcing/eventstore"
+	authz_view "github.com/dennigogo/zitadel/internal/authz/repository/eventsourcing/view"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/id"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 type EsRepository struct {

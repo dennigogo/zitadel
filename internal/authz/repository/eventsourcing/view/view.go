@@ -3,8 +3,8 @@ package view
 import (
 	"database/sql"
 
-	"github.com/zitadel/zitadel/internal/id"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/id"
+	"github.com/dennigogo/zitadel/internal/query"
 
 	"github.com/jinzhu/gorm"
 )

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"testing"
 
-	errs "github.com/zitadel/zitadel/internal/errors"
+	errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 var (

@@ -3,8 +3,8 @@ package domain
 import (
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type authNKey interface {

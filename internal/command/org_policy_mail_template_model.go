@@ -4,10 +4,10 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 
-	"github.com/zitadel/zitadel/internal/repository/org"
-	"github.com/zitadel/zitadel/internal/repository/policy"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/repository/policy"
 )
 
 type OrgMailTemplateWriteModel struct {

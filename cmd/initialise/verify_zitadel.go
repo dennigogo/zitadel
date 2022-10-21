@@ -8,8 +8,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
+	"github.com/dennigogo/zitadel/internal/database"
 	"github.com/zitadel/logging"
-	"github.com/zitadel/zitadel/internal/database"
 )
 
 func newZitadel() *cobra.Command {

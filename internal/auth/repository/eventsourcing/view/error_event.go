@@ -1,7 +1,7 @@
 package view
 
 import (
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 const (

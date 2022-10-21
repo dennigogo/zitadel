@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type Repository interface {

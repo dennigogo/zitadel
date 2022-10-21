@@ -11,12 +11,12 @@ import (
 
 	"github.com/zitadel/logging"
 
-	caos_errors "github.com/zitadel/zitadel/internal/errors"
+	caos_errors "github.com/dennigogo/zitadel/internal/errors"
 
 	"github.com/k3a/html2text"
 
-	"github.com/zitadel/zitadel/internal/notification/channels"
-	"github.com/zitadel/zitadel/internal/notification/messages"
+	"github.com/dennigogo/zitadel/internal/notification/channels"
+	"github.com/dennigogo/zitadel/internal/notification/messages"
 )
 
 func InitFSChannel(config FSConfig) (channels.NotificationChannel, error) {

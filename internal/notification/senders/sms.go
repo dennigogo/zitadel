@@ -3,10 +3,10 @@ package senders
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/notification/channels"
-	"github.com/zitadel/zitadel/internal/notification/channels/fs"
-	"github.com/zitadel/zitadel/internal/notification/channels/log"
-	"github.com/zitadel/zitadel/internal/notification/channels/twilio"
+	"github.com/dennigogo/zitadel/internal/notification/channels"
+	"github.com/dennigogo/zitadel/internal/notification/channels/fs"
+	"github.com/dennigogo/zitadel/internal/notification/channels/log"
+	"github.com/dennigogo/zitadel/internal/notification/channels/twilio"
 )
 
 func SMSChannels(ctx context.Context, twilioConfig *twilio.TwilioConfig, getFileSystemProvider func(ctx context.Context) (*fs.FSConfig, error), getLogProvider func(ctx context.Context) (*log.LogConfig, error)) (chain *Chain, err error) {

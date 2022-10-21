@@ -3,10 +3,10 @@ package models
 import (
 	"time"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
-//SearchQuery is deprecated. Use SearchQueryFactory
+// SearchQuery is deprecated. Use SearchQueryFactory
 type SearchQuery struct {
 	Columns Columns
 	Limit   uint64
@@ -20,7 +20,7 @@ type Query struct {
 	Filters     []*Filter
 }
 
-//NewSearchQuery is deprecated. Use SearchQueryFactory
+// NewSearchQuery is deprecated. Use SearchQueryFactory
 func NewSearchQuery() *SearchQuery {
 	return &SearchQuery{
 		Filters: make([]*Filter, 0, 4),
@@ -42,7 +42,7 @@ func (q *SearchQuery) AddQuery() *Query {
 	return query
 }
 
-//SearchQuery returns the SearchQuery of the sub query
+// SearchQuery returns the SearchQuery of the sub query
 func (q *Query) SearchQuery() *SearchQuery {
 	return q.searchQuery
 }

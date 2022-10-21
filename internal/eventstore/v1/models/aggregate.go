@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type AggregateType string

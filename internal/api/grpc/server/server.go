@@ -7,12 +7,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	grpc_api "github.com/zitadel/zitadel/internal/api/grpc"
-	"github.com/zitadel/zitadel/internal/api/grpc/server/middleware"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/telemetry/metrics"
-	system_pb "github.com/zitadel/zitadel/pkg/grpc/system"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	grpc_api "github.com/dennigogo/zitadel/internal/api/grpc"
+	"github.com/dennigogo/zitadel/internal/api/grpc/server/middleware"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/telemetry/metrics"
+	system_pb "github.com/dennigogo/zitadel/pkg/grpc/system"
 )
 
 type Server interface {

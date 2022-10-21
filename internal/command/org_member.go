@@ -4,12 +4,12 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/zitadel/zitadel/internal/command/preparation"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/org"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/command/preparation"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 func (c *Commands) AddOrgMemberCommand(a *org.Aggregate, userID string, roles ...string) preparation.Validation {
@@ -109,7 +109,7 @@ func (c *Commands) addOrgMember(ctx context.Context, orgAgg *eventstore.Aggregat
 	return org.NewMemberAddedEvent(ctx, orgAgg, member.UserID, member.Roles...), nil
 }
 
-//ChangeOrgMember updates an existing member
+// ChangeOrgMember updates an existing member
 func (c *Commands) ChangeOrgMember(ctx context.Context, member *domain.Member) (*domain.Member, error) {
 	if !member.IsValid() {
 		return nil, errors.ThrowInvalidArgument(nil, "Org-LiaZi", "Errors.Org.MemberInvalid")

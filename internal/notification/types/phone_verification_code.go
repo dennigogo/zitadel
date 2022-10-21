@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func (notify Notify) SendPhoneVerificationCode(user *query.NotifyUser, origin, code string) error {

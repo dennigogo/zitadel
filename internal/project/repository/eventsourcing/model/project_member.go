@@ -5,7 +5,7 @@ import (
 
 	"github.com/zitadel/logging"
 
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type ProjectMember struct {

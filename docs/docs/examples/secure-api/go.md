@@ -9,7 +9,7 @@ At the end of the guide you should have an API with a protected endpoint.
 
 ## Prerequisites
 
-The client [SDK](https://github.com/zitadel/zitadel-go) will provides an interceptor for both GRPC and HTTP.
+The client [SDK](https://github.com/dennigogo/zitadel-go) will provides an interceptor for both GRPC and HTTP.
 This will handle the OAuth 2.0 introspection request including authentication using JWT with Private Key using our [OIDC client library](https://github.com/zitadel/oidc).
 All that is required, is to create your API and download the private key file later called `Key JSON` for the service user.
 
@@ -20,7 +20,7 @@ All that is required, is to create your API and download the private key file la
 You need to add the SDK into Go Modules by:
 
 ```bash
-go get github.com/zitadel/zitadel-go/v2
+go get github.com/dennigogo/zitadel-go/v2
 ```
 
 ### Create example API
@@ -39,8 +39,8 @@ import (
 	"net/http"
 	"time"
 
-	http_mw "github.com/zitadel/zitadel-go/v2/pkg/api/middleware/http"
-	"github.com/zitadel/zitadel-go/v2/pkg/client/middleware"
+	http_mw "github.com/dennigogo/zitadel-go/v2/pkg/api/middleware/http"
+	"github.com/dennigogo/zitadel-go/v2/pkg/client/middleware"
 )
 
 var (

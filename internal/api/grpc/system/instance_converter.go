@@ -5,13 +5,13 @@ import (
 
 	"golang.org/x/text/language"
 
-	instance_grpc "github.com/zitadel/zitadel/internal/api/grpc/instance"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/command"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
-	instance_pb "github.com/zitadel/zitadel/pkg/grpc/instance"
-	system_pb "github.com/zitadel/zitadel/pkg/grpc/system"
+	instance_grpc "github.com/dennigogo/zitadel/internal/api/grpc/instance"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/command"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
+	instance_pb "github.com/dennigogo/zitadel/pkg/grpc/instance"
+	system_pb "github.com/dennigogo/zitadel/pkg/grpc/system"
 )
 
 func AddInstancePbToSetupInstance(req *system_pb.AddInstanceRequest, defaultInstance command.InstanceSetup, externalDomain string) *command.InstanceSetup {

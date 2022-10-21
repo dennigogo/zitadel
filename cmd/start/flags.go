@@ -4,8 +4,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/zitadel/zitadel/cmd/key"
-	"github.com/zitadel/zitadel/cmd/tls"
+	"github.com/dennigogo/zitadel/cmd/key"
+	"github.com/dennigogo/zitadel/cmd/tls"
 )
 
 var tlsMode *string

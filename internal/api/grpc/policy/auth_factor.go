@@ -1,8 +1,8 @@
 package policy
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	policy_pb "github.com/zitadel/zitadel/pkg/grpc/policy"
+	"github.com/dennigogo/zitadel/internal/domain"
+	policy_pb "github.com/dennigogo/zitadel/pkg/grpc/policy"
 )
 
 func SecondFactorsTypesToDomain(secondFactorTypes []policy_pb.SecondFactorType) []domain.SecondFactorType {

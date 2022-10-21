@@ -3,12 +3,12 @@ package eventstore
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/authz"
 )
 
 type aggregateOpt func(*Aggregate)
 
-//NewAggregate is the default constructor of an aggregate
+// NewAggregate is the default constructor of an aggregate
 // opts overwrite values calculated by given parameters
 func NewAggregate(
 	ctx context.Context,
@@ -32,7 +32,7 @@ func NewAggregate(
 	return a
 }
 
-//WithResourceOwner overwrites the resource owner of the aggregate
+// WithResourceOwner overwrites the resource owner of the aggregate
 // by default the resource owner is set by the context
 func WithResourceOwner(resourceOwner string) aggregateOpt {
 	return func(aggregate *Aggregate) {
@@ -40,7 +40,7 @@ func WithResourceOwner(resourceOwner string) aggregateOpt {
 	}
 }
 
-//AggregateFromWriteModel maps the given WriteModel to an Aggregate
+// AggregateFromWriteModel maps the given WriteModel to an Aggregate
 func AggregateFromWriteModel(
 	wm *WriteModel,
 	typ AggregateType,
@@ -55,7 +55,7 @@ func AggregateFromWriteModel(
 	}
 }
 
-//Aggregate is the basic implementation of Aggregater
+// Aggregate is the basic implementation of Aggregater
 type Aggregate struct {
 	//ID is the unique identitfier of this aggregate
 	ID string `json:"-"`

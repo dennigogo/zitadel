@@ -1,8 +1,8 @@
 package management
 
 import (
-	"github.com/zitadel/zitadel/internal/api/grpc/server/middleware"
-	"github.com/zitadel/zitadel/pkg/grpc/change"
+	"github.com/dennigogo/zitadel/internal/api/grpc/server/middleware"
+	"github.com/dennigogo/zitadel/pkg/grpc/change"
 )
 
 func (c *ListUserChangesResponse) Localizers() []middleware.Localizer {

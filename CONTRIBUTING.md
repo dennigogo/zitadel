@@ -6,21 +6,21 @@ Thank you for your interest about how to contribute! As you might know there is 
 
 Please give us and our community the chance to get rid of security vulnerabilities by responsibly disclose this kind of issues by contacting [security@zitadel.com](mailto:security@zitadel.com).
 
-The strongest part of a community is the possibility to share thoughts. That's why we try to react as soon as possible to your ideas, thoughts and feedback. We love to discuss as much as possible in an open space like in the [issues](https://github.com/zitadel/zitadel/issues) and [discussions](https://github.com/zitadel/zitadel/discussions) section here or in our [chat](https://zitadel.com/chat), but we understand your doubts and provide further contact options [here](https://zitadel.com/contact).
+The strongest part of a community is the possibility to share thoughts. That's why we try to react as soon as possible to your ideas, thoughts and feedback. We love to discuss as much as possible in an open space like in the [issues](https://github.com/dennigogo/zitadel/issues) and [discussions](https://github.com/dennigogo/zitadel/discussions) section here or in our [chat](https://zitadel.com/chat), but we understand your doubts and provide further contact options [here](https://zitadel.com/contact).
 
 If you want to give an answer or be part of discussions please be kind. Treat others like you want to be treated. Read more about our code of conduct [here](CODE_OF_CONDUCT.md).
 
 ## What can I contribute?
 
-For people who are new to ZITADEL: We flag issues which are a good starting point to start contributing. You find them [here](https://github.com/zitadel/zitadel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+For people who are new to ZITADEL: We flag issues which are a good starting point to start contributing. You find them [here](https://github.com/dennigogo/zitadel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 Make ZITADEL more popular and give it a ⭐
 
 Help shaping the future of ZITADEL:
 
 - Join our [chat](https://zitadel.com/chat) and discuss with us or others.
-- Ask or answer questions in the [issues section](https://github.com/zitadel/zitadel/issues)
-- Share your thoughts and ideas in the [discussions section](https://github.com/zitadel/zitadel/discussions)
+- Ask or answer questions in the [issues section](https://github.com/dennigogo/zitadel/issues)
+- Share your thoughts and ideas in the [discussions section](https://github.com/dennigogo/zitadel/discussions)
 
 [Contribute](#how-to-contribute)
 
@@ -38,7 +38,7 @@ We accept contributions through pull requests. You need a github account for tha
 
 ### Submit a Pull Request (PR)
 
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [zitadel/zitadel](https://github.com/zitadel/zitadel) repository on GitHub
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the [zitadel/zitadel](https://github.com/dennigogo/zitadel) repository on GitHub
 2. On your fork, commit your changes to a new branch
 
 `git checkout -b my-fix-branch main`
@@ -104,8 +104,8 @@ Please validate and test the code before you contribute.
 
 We add the label "good first issue" for problems we think are a good starting point to contribute to ZITADEL.
 
-- [Issues for first time contributors](https://github.com/zitadel/zitadel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-- [All issues](https://github.com/zitadel/zitadel/issues)
+- [Issues for first time contributors](https://github.com/dennigogo/zitadel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+- [All issues](https://github.com/dennigogo/zitadel/issues)
 
 ### Backend / Login
 
@@ -172,7 +172,7 @@ docker compose --file ./e2e/docker-compose.yaml down
 ### Console
 
 By executing the commands from this section, you run everything you need to develop the console locally.
-Using [Docker Compose](https://docs.docker.com/compose/), you run [CockroachDB](https://www.cockroachlabs.com/docs/v22.1/start-a-local-cluster-in-docker-mac.html) and the [latest release of ZITADEL](https://github.com/zitadel/zitadel/releases/latest) on your local machine.
+Using [Docker Compose](https://docs.docker.com/compose/), you run [CockroachDB](https://www.cockroachlabs.com/docs/v22.1/start-a-local-cluster-in-docker-mac.html) and the [latest release of ZITADEL](https://github.com/dennigogo/zitadel/releases/latest) on your local machine.
 You use the ZITADEL container as backend for your console.
 The console is run in your [Node](https://nodejs.org/en/about/) environment using [a local development server for Angular](https://angular.io/cli/serve#ng-serve), so you have fast feedback about your changes.
 

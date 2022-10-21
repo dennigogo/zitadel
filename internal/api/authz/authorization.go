@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 const (

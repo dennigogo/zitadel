@@ -3,8 +3,8 @@ package eventstore
 import (
 	"sync"
 
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 var (
@@ -17,7 +17,7 @@ type Subscription struct {
 	types  map[AggregateType][]EventType
 }
 
-//SubscribeAggregates subscribes for all events on the given aggregates
+// SubscribeAggregates subscribes for all events on the given aggregates
 func SubscribeAggregates(eventQueue chan Event, aggregates ...AggregateType) *Subscription {
 	types := make(map[AggregateType][]EventType, len(aggregates))
 	for _, aggregate := range aggregates {
@@ -38,7 +38,7 @@ func SubscribeAggregates(eventQueue chan Event, aggregates ...AggregateType) *Su
 	return sub
 }
 
-//SubscribeEventTypes subscribes for the given event types
+// SubscribeEventTypes subscribes for the given event types
 // if no event types are provided the subscription is for all events of the aggregate
 func SubscribeEventTypes(eventQueue chan Event, types map[AggregateType][]EventType) *Subscription {
 	aggregates := make([]AggregateType, len(types))

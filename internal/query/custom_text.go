@@ -12,12 +12,12 @@ import (
 	"golang.org/x/text/language"
 	"sigs.k8s.io/yaml"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/authz"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/query/projection"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/query/projection"
 )
 
 type CustomTexts struct {

@@ -34,7 +34,7 @@ builds:
       - amd64
       - arm64
     ldflags:
-      -s -w -X github.com/zitadel/zitadel/cmd/build.version={{.Version}} -X github.com/zitadel/zitadel/cmd/build.commit={{.Commit}} -X github.com/zitadel/zitadel/cmd/build.date={{.Date}}
+      -s -w -X github.com/dennigogo/zitadel/cmd/build.version={{.Version}} -X github.com/dennigogo/zitadel/cmd/build.commit={{.Commit}} -X github.com/dennigogo/zitadel/cmd/build.date={{.Date}}
       
 dist: .artifacts/goreleaser
 
@@ -125,4 +125,4 @@ brews:
 announce:
   discord:
     enabled: true
-    message_template: 'ZITADEL {{ .Tag }} is ready! Check the notes: https://github.com/zitadel/zitadel/releases/tag/{{ .Tag }}'
+    message_template: 'ZITADEL {{ .Tag }} is ready! Check the notes: https://github.com/dennigogo/zitadel/releases/tag/{{ .Tag }}'

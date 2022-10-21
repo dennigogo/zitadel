@@ -11,17 +11,17 @@ import (
 	"github.com/muesli/gamut"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/api/ui/login"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/query"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/spooler"
-	iam_model "github.com/zitadel/zitadel/internal/iam/repository/view/model"
-	"github.com/zitadel/zitadel/internal/repository/instance"
-	"github.com/zitadel/zitadel/internal/repository/org"
-	"github.com/zitadel/zitadel/internal/static"
+	"github.com/dennigogo/zitadel/internal/api/ui/login"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/query"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/spooler"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/static"
 )
 
 const (

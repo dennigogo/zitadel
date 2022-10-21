@@ -1,11 +1,11 @@
 package idp
 
 import (
-	obj_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/domain"
-	iam_model "github.com/zitadel/zitadel/internal/iam/model"
-	"github.com/zitadel/zitadel/internal/query"
-	idp_pb "github.com/zitadel/zitadel/pkg/grpc/idp"
+	obj_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/domain"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/model"
+	"github.com/dennigogo/zitadel/internal/query"
+	idp_pb "github.com/dennigogo/zitadel/pkg/grpc/idp"
 )
 
 func IDPViewsToPb(idps []*query.IDP) []*idp_pb.IDP {

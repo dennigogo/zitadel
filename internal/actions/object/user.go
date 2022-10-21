@@ -3,11 +3,11 @@ package object
 import (
 	"time"
 
+	"github.com/dennigogo/zitadel/internal/actions"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
 	"github.com/dop251/goja"
-	"github.com/zitadel/zitadel/internal/actions"
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
 )
 
 func UserFromExternalUser(c *actions.FieldConfig, user *domain.ExternalUser) goja.Value {

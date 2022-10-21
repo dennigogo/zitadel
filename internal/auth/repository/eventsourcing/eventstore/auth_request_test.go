@@ -8,18 +8,18 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/view"
-	"github.com/zitadel/zitadel/internal/auth_request/repository/cache"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	proj_view_model "github.com/zitadel/zitadel/internal/project/repository/view/model"
-	"github.com/zitadel/zitadel/internal/query"
-	user_repo "github.com/zitadel/zitadel/internal/repository/user"
-	user_model "github.com/zitadel/zitadel/internal/user/model"
-	user_es_model "github.com/zitadel/zitadel/internal/user/repository/eventsourcing/model"
-	user_view_model "github.com/zitadel/zitadel/internal/user/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/view"
+	"github.com/dennigogo/zitadel/internal/auth_request/repository/cache"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	proj_view_model "github.com/dennigogo/zitadel/internal/project/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/query"
+	user_repo "github.com/dennigogo/zitadel/internal/repository/user"
+	user_model "github.com/dennigogo/zitadel/internal/user/model"
+	user_es_model "github.com/dennigogo/zitadel/internal/user/repository/eventsourcing/model"
+	user_view_model "github.com/dennigogo/zitadel/internal/user/repository/view/model"
 )
 
 var (

@@ -3,7 +3,7 @@ package model
 import (
 	"time"
 
-	"github.com/zitadel/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/domain"
 )
 
 type LockoutPolicyView struct {

@@ -8,9 +8,9 @@ import (
 	"github.com/cockroachdb/cockroach-go/v2/testserver"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/cmd/initialise"
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/database/cockroach"
+	"github.com/dennigogo/zitadel/cmd/initialise"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/database/cockroach"
 )
 
 var (

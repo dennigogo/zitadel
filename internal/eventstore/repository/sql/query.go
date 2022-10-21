@@ -10,8 +10,8 @@ import (
 
 	"github.com/zitadel/logging"
 
-	z_errors "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	z_errors "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
 type querier interface {

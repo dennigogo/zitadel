@@ -1,9 +1,9 @@
 package view
 
 import (
-	"github.com/zitadel/zitadel/internal/errors"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/repository/org"
+	"github.com/dennigogo/zitadel/internal/errors"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/repository/org"
 )
 
 func OrgByIDQuery(id, instanceID string, latestSequence uint64) (*es_models.SearchQuery, error) {

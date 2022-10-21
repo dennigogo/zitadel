@@ -1,11 +1,11 @@
 package admin
 
 import (
-	instance_grpc "github.com/zitadel/zitadel/internal/api/grpc/instance"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/query"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
-	"github.com/zitadel/zitadel/pkg/grpc/instance"
+	instance_grpc "github.com/dennigogo/zitadel/internal/api/grpc/instance"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/query"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
+	"github.com/dennigogo/zitadel/pkg/grpc/instance"
 )
 
 func ListInstanceDomainsRequestToModel(req *admin_pb.ListInstanceDomainsRequest) (*query.InstanceDomainSearchQueries, error) {

@@ -8,13 +8,13 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/database"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/query/projection"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/query/projection"
 )
 
 type IDP struct {
@@ -179,7 +179,7 @@ var (
 	}
 )
 
-//IDPByIDAndResourceOwner searches for the requested id in the context of the resource owner and IAM
+// IDPByIDAndResourceOwner searches for the requested id in the context of the resource owner and IAM
 func (q *Queries) IDPByIDAndResourceOwner(ctx context.Context, shouldTriggerBulk bool, id, resourceOwner string) (*IDP, error) {
 	if shouldTriggerBulk {
 		projection.IDPProjection.Trigger(ctx)
@@ -210,7 +210,7 @@ func (q *Queries) IDPByIDAndResourceOwner(ctx context.Context, shouldTriggerBulk
 	return scan(row)
 }
 
-//IDPs searches idps matching the query
+// IDPs searches idps matching the query
 func (q *Queries) IDPs(ctx context.Context, queries *IDPSearchQueries) (idps *IDPs, err error) {
 	query, scan := prepareIDPsQuery()
 	stmt, args, err := queries.toQuery(query).

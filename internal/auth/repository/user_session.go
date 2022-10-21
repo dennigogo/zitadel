@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/user/model"
+	"github.com/dennigogo/zitadel/internal/user/model"
 )
 
 type UserSessionRepository interface {

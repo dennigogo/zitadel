@@ -4,18 +4,18 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/zitadel/zitadel/graphs/contributors" alt="Release">
+    <a href="https://github.com/dennigogo/zitadel/graphs/contributors" alt="Release">
         <img src="https://badgen.net/github/contributors/zitadel/zitadel" /></a>
     <a href="https://github.com/semantic-release/semantic-release" alt="semantic-release">
         <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" /></a>
-    <a href="https://github.com/zitadel/zitadel/actions" alt="ZITADEL Release">
-        <img src="https://github.com/zitadel/zitadel/actions/workflows/zitadel.yml/badge.svg" /></a>
-    <a href="https://github.com/zitadel/zitadel/blob/main/LICENSE" alt="License">
+    <a href="https://github.com/dennigogo/zitadel/actions" alt="ZITADEL Release">
+        <img src="https://github.com/dennigogo/zitadel/actions/workflows/zitadel.yml/badge.svg" /></a>
+    <a href="https://github.com/dennigogo/zitadel/blob/main/LICENSE" alt="License">
         <img src="https://badgen.net/github/license/zitadel/zitadel/" /></a>
-    <a href="https://github.com/zitadel/zitadel/releases" alt="Release">
+    <a href="https://github.com/dennigogo/zitadel/releases" alt="Release">
         <img src="https://badgen.net/github/release/zitadel/zitadel/stable" /></a>
-    <a href="https://goreportcard.com/report/github.com/zitadel/zitadel" alt="Go Report Card">
-        <img src="https://goreportcard.com/badge/github.com/zitadel/zitadel" /></a>
+    <a href="https://goreportcard.com/report/github.com/dennigogo/zitadel" alt="Go Report Card">
+        <img src="https://goreportcard.com/badge/github.com/dennigogo/zitadel" /></a>
     <a href="https://codecov.io/gh/zitadel/zitadel" alt="Code Coverage">
         <img src="https://codecov.io/gh/zitadel/zitadel/branch/main/graph/badge.svg" /></a>
     <a href="https://discord.gg/erh5Brh7jE" alt="Discord Chat">
@@ -55,7 +55,7 @@ It's free for up to 25'000 authenticated requests. Learn more about the [pay-as-
 
 [Multiple Examples can be found here](https://docs.zitadel.com/docs/examples/introduction)
 
-> If you miss something please feel free to [join the Discussion](https://github.com/zitadel/zitadel/discussions/1717)
+> If you miss something please feel free to [join the Discussion](https://github.com/dennigogo/zitadel/discussions/1717)
 
 ## Why ZITADEL
 
@@ -94,10 +94,10 @@ Track upcoming features on our [roadmap](https://zitadel.com/roadmap).
 | .NET     | [zitadel-net](https://github.com/smartive/zitadel-net) | GRPC | ✔️ | ✔️ | [smartive 👑](https://github.com/smartive/) |
 | Dart     | [zitadel-dart](https://github.com/smartive/zitadel-dart) | GRPC | ✔️ | ❌ | [smartive 👑](https://github.com/smartive/) |
 | Elixir   | [zitadel_api](https://github.com/jshmrtn/zitadel_api) | GRPC | ✔️ | ✔️ | [jshmrtn 🙏🏻](https://github.com/jshmrtn) |
-| Go       | [zitadel-go](https://github.com/zitadel/zitadel-go) | GRPC | ✔️ | ✔️ | ZITADEL |
+| Go       | [zitadel-go](https://github.com/dennigogo/zitadel-go) | GRPC | ✔️ | ✔️ | ZITADEL |
 | Rust     | [zitadel-rust](https://crates.io/crates/zitadel) | GRPC | ✔️ | ❌ | [smartive 👑](https://github.com/smartive/) |
-| JVM      | 🚧 [WIP](https://github.com/zitadel/zitadel/discussions/3650) | ❓ | ❓ | | TBD |
-| Python   | 🚧 [WIP](https://github.com/zitadel/zitadel/issues/3675) | ❓ | ❓ | | TBD |
+| JVM      | 🚧 [WIP](https://github.com/dennigogo/zitadel/discussions/3650) | ❓ | ❓ | | TBD |
+| Python   | 🚧 [WIP](https://github.com/dennigogo/zitadel/issues/3675) | ❓ | ❓ | | TBD |
 | Javascript | ❓ | ❓ | ❓ | | Maybe you? |
 
 (\*) Automatically authenticate service accounts with [JWT Profile](https://docs.zitadel.com/docs/apis/openidoauth/grant-types#json-web-token-jwt-profile).  
@@ -109,7 +109,7 @@ Details about how to contribute you can find in the [Contribution Guide](./CONTR
 
 ## Contributors
 
-<a href="https://github.com/zitadel/zitadel/graphs/contributors">
+<a href="https://github.com/dennigogo/zitadel/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=zitadel/zitadel" />
 </a>
 

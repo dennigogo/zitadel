@@ -9,11 +9,11 @@ import (
 
 	"github.com/zitadel/logging"
 
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/query"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/query"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 const systemID = "system"

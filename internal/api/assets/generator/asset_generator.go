@@ -8,7 +8,7 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/config"
+	"github.com/dennigogo/zitadel/internal/config"
 )
 
 var (
@@ -131,7 +131,7 @@ func GenerateAssetHandler(configFilePath, handlerPrefix string, authz, router, d
 const authzTmpl = `package {{.GoPkgName}}
 
 import (
-	"github.com/zitadel/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/authz"
 )
 
 /**
@@ -164,9 +164,9 @@ const routerTmpl = `package {{.GoPkgName}}
 import (
 	"github.com/gorilla/mux"
 
-	http_mw "github.com/zitadel/zitadel/internal/api/http/middleware"
-	"github.com/zitadel/zitadel/internal/command"
-	"github.com/zitadel/zitadel/internal/static"
+	http_mw "github.com/dennigogo/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/internal/command"
+	"github.com/dennigogo/zitadel/internal/static"
 )
 
 type {{.Name}} interface {

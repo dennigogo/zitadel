@@ -3,9 +3,9 @@ package eventstore
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/admin/repository/eventsourcing/view"
-	view_model "github.com/zitadel/zitadel/internal/view/model"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/admin/repository/eventsourcing/view"
+	view_model "github.com/dennigogo/zitadel/internal/view/model"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 var dbList = []string{"auth", "adminapi"}

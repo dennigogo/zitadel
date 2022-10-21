@@ -11,9 +11,9 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	client_middleware "github.com/zitadel/zitadel/internal/api/grpc/client/middleware"
-	"github.com/zitadel/zitadel/internal/api/grpc/server/middleware"
-	http_mw "github.com/zitadel/zitadel/internal/api/http/middleware"
+	client_middleware "github.com/dennigogo/zitadel/internal/api/grpc/client/middleware"
+	"github.com/dennigogo/zitadel/internal/api/grpc/server/middleware"
+	http_mw "github.com/dennigogo/zitadel/internal/api/http/middleware"
 )
 
 const (

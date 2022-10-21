@@ -5,8 +5,8 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type APIConfig struct {

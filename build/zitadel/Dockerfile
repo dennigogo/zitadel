@@ -5,7 +5,7 @@ ARG GO_VERSION=1.19
 ## Speed up this step by mounting your local go mod pkg directory
 #######################
 FROM golang:${GO_VERSION} as go-dep
-WORKDIR /go/src/github.com/zitadel/zitadel
+WORKDIR /go/src/github.com/dennigogo/zitadel
 
 #download modules
 COPY go.mod ./
@@ -20,6 +20,7 @@ RUN ./tools/install.sh
 ## generates static files
 #######################
 FROM go-dep AS go-static
+RUN apt update && apt install -y npm && npm install -g sass && npm install -g statik && npm install -g  static && apt clean
 COPY internal/api/ui/login/static internal/api/ui/login/static
 COPY internal/api/ui/login/statik internal/api/ui/login/statik
 COPY internal/notification/static internal/notification/static
@@ -64,22 +65,22 @@ COPY openapi openapi
 #######################
 ## copy for local dev
 #######################
-FROM scratch as go-copy
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/api/ui/login/statik/statik.go internal/api/ui/login/statik/statik.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/notification/statik/statik.go internal/notification/statik/statik.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/statik/statik.go internal/statik/statik.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/openapi/statik/statik.go openapi/statik/statik.go
+FROM ubuntu as go-copy
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/api/ui/login/statik/statik.go internal/api/ui/login/statik/statik.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/notification/statik/statik.go internal/notification/statik/statik.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/statik/statik.go internal/statik/statik.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/openapi/statik/statik.go openapi/statik/statik.go
 
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/pkg/grpc pkg/grpc
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/openapi/v2/zitadel openapi/v2/zitadel
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/openapi/statik/statik.go openapi/statik/statik.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/protoc/protoc-gen-authoption/templates.gen.go internal/protoc/protoc-gen-authoption/templates.gen.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/protoc/protoc-gen-authoption/authoption/options.pb.go internal/protoc/protoc-gen-authoption/authoption/options.pb.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/docs/apis/proto docs/docs/apis/proto
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/docs/apis/assets docs/docs/apis/assets
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/pkg/grpc pkg/grpc
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/openapi/v2/zitadel openapi/v2/zitadel
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/openapi/statik/statik.go openapi/statik/statik.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/protoc/protoc-gen-authoption/templates.gen.go internal/protoc/protoc-gen-authoption/templates.gen.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/protoc/protoc-gen-authoption/authoption/options.pb.go internal/protoc/protoc-gen-authoption/authoption/options.pb.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/docs/apis/proto docs/docs/apis/proto
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/docs/apis/assets docs/docs/apis/assets
 
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/api/assets/authz.go ./internal/api/assets/authz.go
-COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/api/assets/router.go ./internal/api/assets/router.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/api/assets/authz.go /internal/api/assets/authz.go
+COPY --from=go-stub /go/src/github.com/dennigogo/zitadel/internal/api/assets/router.go /internal/api/assets/router.go
 
 #######################
 ## Go test
@@ -87,7 +88,7 @@ COPY --from=go-stub /go/src/github.com/zitadel/zitadel/internal/api/assets/route
 FROM go-base as go-test
 
 ARG COCKROACH_BINARY=cockroach
-RUN apt install openssl tzdata tar
+RUN apt install -y openssl tzdata tar
 
 # cockroach binary used to backup database
 RUN mkdir /usr/local/lib/cockroach
@@ -103,4 +104,4 @@ RUN go install github.com/rakyll/statik \
 ## Go test results
 #######################
 FROM scratch as go-codecov
-COPY --from=go-test /go/src/github.com/zitadel/zitadel/profile.cov profile.cov
+COPY --from=go-test /go/src/github.com/dennigogo/zitadel/profile.cov profile.cov

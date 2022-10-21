@@ -6,8 +6,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
 func TestCRDB_placeholder(t *testing.T) {

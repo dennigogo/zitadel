@@ -11,13 +11,13 @@ import (
 	"github.com/zitadel/logging"
 	"google.golang.org/grpc"
 
-	internal_authz "github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/grpc/server"
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/telemetry/metrics"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	internal_authz "github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/grpc/server"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/telemetry/metrics"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 type API struct {

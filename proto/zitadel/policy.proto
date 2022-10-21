@@ -7,7 +7,7 @@ import "protoc-gen-openapiv2/options/annotations.proto";
 
 package zitadel.policy.v1;
 
-option go_package ="github.com/zitadel/zitadel/pkg/grpc/policy";
+option go_package ="github.com/dennigogo/zitadel/pkg/grpc/policy";
 
 //deprecated: please use DomainPolicy instead
 message OrgIAMPolicy {

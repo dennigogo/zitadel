@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	errs "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/domain"
+	errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 func Test_ActionPrepares(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/domain"
 )
 
 func Test_OrgDomainPrepares(t *testing.T) {

@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/authz"
 )
 
 type UserMembershipRepository interface {

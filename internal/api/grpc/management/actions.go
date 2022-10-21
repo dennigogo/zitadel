@@ -3,10 +3,10 @@ package management
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	action_grpc "github.com/zitadel/zitadel/internal/api/grpc/action"
-	obj_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	mgmt_pb "github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	action_grpc "github.com/dennigogo/zitadel/internal/api/grpc/action"
+	obj_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	mgmt_pb "github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 func (s *Server) ListActions(ctx context.Context, req *mgmt_pb.ListActionsRequest) (*mgmt_pb.ListActionsResponse, error) {

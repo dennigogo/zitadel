@@ -5,9 +5,9 @@ import (
 	"github.com/spf13/viper"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/cmd/key"
-	"github.com/zitadel/zitadel/cmd/setup"
-	"github.com/zitadel/zitadel/cmd/tls"
+	"github.com/dennigogo/zitadel/cmd/key"
+	"github.com/dennigogo/zitadel/cmd/setup"
+	"github.com/dennigogo/zitadel/cmd/tls"
 )
 
 func NewStartFromSetup() *cobra.Command {

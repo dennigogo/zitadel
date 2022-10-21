@@ -5,9 +5,9 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	view_model "github.com/zitadel/zitadel/internal/view/model"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	view_model "github.com/dennigogo/zitadel/internal/view/model"
 )
 
 type FailedEvent struct {

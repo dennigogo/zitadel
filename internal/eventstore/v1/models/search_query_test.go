@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 func testSetColumns(columns Columns) func(factory *SearchQueryFactory) *SearchQueryFactory {

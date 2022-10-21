@@ -4,14 +4,14 @@ import (
 	"context"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/view"
-	sd "github.com/zitadel/zitadel/internal/config/systemdefaults"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/query"
-	query2 "github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/view"
+	sd "github.com/dennigogo/zitadel/internal/config/systemdefaults"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/query"
+	query2 "github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 type Configs map[string]*Config
