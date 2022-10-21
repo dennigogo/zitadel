@@ -13,15 +13,15 @@ import (
 	"github.com/gorilla/csrf"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	http_mw "github.com/zitadel/zitadel/internal/api/http/middleware"
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/i18n"
-	"github.com/zitadel/zitadel/internal/notification/templates"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/renderer"
-	"github.com/zitadel/zitadel/internal/static"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	http_mw "github.com/dennigogo/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/i18n"
+	"github.com/dennigogo/zitadel/internal/notification/templates"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/renderer"
+	"github.com/dennigogo/zitadel/internal/static"
 )
 
 const (

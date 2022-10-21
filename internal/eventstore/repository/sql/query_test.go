@@ -10,8 +10,8 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
 func Test_getCondition(t *testing.T) {

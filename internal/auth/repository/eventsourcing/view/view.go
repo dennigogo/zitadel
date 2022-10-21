@@ -5,10 +5,10 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	eventstore "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/id"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	eventstore "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/id"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 type View struct {

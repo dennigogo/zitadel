@@ -13,15 +13,15 @@ import (
 	"github.com/zitadel/oidc/v2/pkg/op"
 	"gopkg.in/square/go-jose.v2"
 
-	"github.com/zitadel/zitadel/internal/actions"
-	"github.com/zitadel/zitadel/internal/actions/object"
-	"github.com/zitadel/zitadel/internal/api/authz"
-	api_http "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/actions"
+	"github.com/dennigogo/zitadel/internal/actions/object"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	api_http "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 const (

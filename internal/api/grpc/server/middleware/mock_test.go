@@ -5,7 +5,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 func emptyMockHandler(_ context.Context, req interface{}) (interface{}, error) {

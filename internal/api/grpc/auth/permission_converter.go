@@ -3,11 +3,11 @@ package auth
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	user_grpc "github.com/zitadel/zitadel/internal/api/grpc/user"
-	"github.com/zitadel/zitadel/internal/query"
-	auth_pb "github.com/zitadel/zitadel/pkg/grpc/auth"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	user_grpc "github.com/dennigogo/zitadel/internal/api/grpc/user"
+	"github.com/dennigogo/zitadel/internal/query"
+	auth_pb "github.com/dennigogo/zitadel/pkg/grpc/auth"
 )
 
 func ListMyMembershipsRequestToModel(ctx context.Context, req *auth_pb.ListMyMembershipsRequest) (*query.MembershipSearchQuery, error) {

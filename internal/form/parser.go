@@ -3,7 +3,7 @@ package form
 import (
 	"net/http"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 
 	"github.com/gorilla/schema"
 )

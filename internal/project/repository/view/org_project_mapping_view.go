@@ -3,11 +3,11 @@ package view
 import (
 	"github.com/jinzhu/gorm"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	proj_model "github.com/zitadel/zitadel/internal/project/model"
-	"github.com/zitadel/zitadel/internal/project/repository/view/model"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	proj_model "github.com/dennigogo/zitadel/internal/project/model"
+	"github.com/dennigogo/zitadel/internal/project/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 func OrgProjectMappingByIDs(db *gorm.DB, table, orgID, projectID, instanceID string) (*model.OrgProjectMapping, error) {

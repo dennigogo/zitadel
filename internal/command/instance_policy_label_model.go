@@ -3,10 +3,10 @@ package command
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/instance"
-	"github.com/zitadel/zitadel/internal/repository/policy"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/repository/policy"
 )
 
 type InstanceLabelPolicyWriteModel struct {

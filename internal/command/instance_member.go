@@ -4,14 +4,14 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/command/preparation"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/instance"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/command/preparation"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 func (c *Commands) AddInstanceMemberCommand(a *instance.Aggregate, userID string, roles ...string) preparation.Validation {
@@ -88,7 +88,7 @@ func (c *Commands) AddInstanceMember(ctx context.Context, userID string, roles .
 	return memberWriteModelToMember(&addedMember.MemberWriteModel), nil
 }
 
-//ChangeInstanceMember updates an existing member
+// ChangeInstanceMember updates an existing member
 func (c *Commands) ChangeInstanceMember(ctx context.Context, member *domain.Member) (*domain.Member, error) {
 	if !member.IsIAMValid() {
 		return nil, caos_errs.ThrowInvalidArgument(nil, "INSTANCE-LiaZi", "Errors.IAM.MemberInvalid")

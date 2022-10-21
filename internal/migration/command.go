@@ -4,14 +4,14 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/service"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/service"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
-//SetupStep is the command pushed on the eventstore
+// SetupStep is the command pushed on the eventstore
 type SetupStep struct {
 	eventstore.BaseEvent `json:"-"`
 	migration            Migration

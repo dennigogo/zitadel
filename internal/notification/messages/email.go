@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/notification/channels"
+	"github.com/dennigogo/zitadel/internal/notification/channels"
 )
 
 var (

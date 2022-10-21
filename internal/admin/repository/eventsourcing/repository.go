@@ -4,12 +4,12 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/zitadel/zitadel/internal/admin/repository/eventsourcing/eventstore"
-	"github.com/zitadel/zitadel/internal/admin/repository/eventsourcing/spooler"
-	admin_view "github.com/zitadel/zitadel/internal/admin/repository/eventsourcing/view"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	es_spol "github.com/zitadel/zitadel/internal/eventstore/v1/spooler"
-	"github.com/zitadel/zitadel/internal/static"
+	"github.com/dennigogo/zitadel/internal/admin/repository/eventsourcing/eventstore"
+	"github.com/dennigogo/zitadel/internal/admin/repository/eventsourcing/spooler"
+	admin_view "github.com/dennigogo/zitadel/internal/admin/repository/eventsourcing/view"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	es_spol "github.com/dennigogo/zitadel/internal/eventstore/v1/spooler"
+	"github.com/dennigogo/zitadel/internal/static"
 )
 
 type Config struct {

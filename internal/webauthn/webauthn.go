@@ -9,10 +9,10 @@ import (
 	"github.com/duo-labs/webauthn/webauthn"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 type Config struct {

@@ -13,9 +13,9 @@ import (
 	processor "go.opentelemetry.io/otel/sdk/metric/processor/basic"
 	selector "go.opentelemetry.io/otel/sdk/metric/selector/simple"
 
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/telemetry/metrics"
-	otel_resource "github.com/zitadel/zitadel/internal/telemetry/otel"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/telemetry/metrics"
+	otel_resource "github.com/dennigogo/zitadel/internal/telemetry/otel"
 )
 
 type Metrics struct {

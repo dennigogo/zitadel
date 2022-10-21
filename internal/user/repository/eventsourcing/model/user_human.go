@@ -6,12 +6,12 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/repository/user"
-	"github.com/zitadel/zitadel/internal/user/model"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/user/model"
 )
 
 type Human struct {

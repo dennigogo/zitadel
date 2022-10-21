@@ -5,13 +5,13 @@ import (
 
 	"github.com/zitadel/logging"
 
-	caos_errors "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/notification/channels/fs"
-	"github.com/zitadel/zitadel/internal/notification/channels/log"
-	"github.com/zitadel/zitadel/internal/notification/channels/twilio"
-	"github.com/zitadel/zitadel/internal/notification/messages"
-	"github.com/zitadel/zitadel/internal/notification/senders"
-	"github.com/zitadel/zitadel/internal/query"
+	caos_errors "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/notification/channels/fs"
+	"github.com/dennigogo/zitadel/internal/notification/channels/log"
+	"github.com/dennigogo/zitadel/internal/notification/channels/twilio"
+	"github.com/dennigogo/zitadel/internal/notification/messages"
+	"github.com/dennigogo/zitadel/internal/notification/senders"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func generateSms(ctx context.Context, user *query.NotifyUser, content string, getTwilioProvider func(ctx context.Context) (*twilio.TwilioConfig, error), getFileSystemProvider func(ctx context.Context) (*fs.FSConfig, error), getLogProvider func(ctx context.Context) (*log.LogConfig, error), lastPhone bool) error {

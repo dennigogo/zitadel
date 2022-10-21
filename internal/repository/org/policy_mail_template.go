@@ -3,10 +3,10 @@ package org
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
-	"github.com/zitadel/zitadel/internal/repository/policy"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/repository/policy"
 )
 
 var (

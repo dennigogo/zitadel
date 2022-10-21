@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"net/http"
 
-	"github.com/zitadel/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/domain"
 )
 
 const (

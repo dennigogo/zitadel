@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/command/preparation"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/command/preparation"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
 )
 
 func (c *Commands) prepareAddOIDCSettings(a *instance.Aggregate, accessTokenLifetime, idTokenLifetime, refreshTokenIdleExpiration, refreshTokenExpiration time.Duration) preparation.Validation {

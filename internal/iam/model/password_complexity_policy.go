@@ -3,8 +3,8 @@ package model
 import (
 	"regexp"
 
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 var (

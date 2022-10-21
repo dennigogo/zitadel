@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	member_grpc "github.com/zitadel/zitadel/internal/api/grpc/member"
-	object_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	proj_grpc "github.com/zitadel/zitadel/internal/api/grpc/project"
-	"github.com/zitadel/zitadel/internal/query"
-	mgmt_pb "github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	member_grpc "github.com/dennigogo/zitadel/internal/api/grpc/member"
+	object_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	proj_grpc "github.com/dennigogo/zitadel/internal/api/grpc/project"
+	"github.com/dennigogo/zitadel/internal/query"
+	mgmt_pb "github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 func (s *Server) GetProjectGrantByID(ctx context.Context, req *mgmt_pb.GetProjectGrantByIDRequest) (*mgmt_pb.GetProjectGrantByIDResponse, error) {

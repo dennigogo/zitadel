@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type Filter struct {
@@ -10,7 +10,7 @@ type Filter struct {
 	operation Operation
 }
 
-//NewFilter is used in tests. Use searchQuery.*Filter() instead
+// NewFilter is used in tests. Use searchQuery.*Filter() instead
 func NewFilter(field Field, value interface{}, operation Operation) *Filter {
 	return &Filter{
 		field:     field,

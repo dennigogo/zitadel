@@ -4,14 +4,14 @@ import (
 	"context"
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/command/preparation"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/org"
-	user_repo "github.com/zitadel/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/command/preparation"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/org"
+	user_repo "github.com/dennigogo/zitadel/internal/repository/user"
 )
 
 type OrgSetup struct {

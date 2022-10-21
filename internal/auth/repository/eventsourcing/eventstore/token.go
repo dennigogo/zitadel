@@ -6,15 +6,15 @@ import (
 
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/view"
-	"github.com/zitadel/zitadel/internal/errors"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
-	usr_model "github.com/zitadel/zitadel/internal/user/model"
-	usr_view "github.com/zitadel/zitadel/internal/user/repository/view"
-	"github.com/zitadel/zitadel/internal/user/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/view"
+	"github.com/dennigogo/zitadel/internal/errors"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
+	usr_model "github.com/dennigogo/zitadel/internal/user/model"
+	usr_view "github.com/dennigogo/zitadel/internal/user/repository/view"
+	"github.com/dennigogo/zitadel/internal/user/repository/view/model"
 )
 
 type TokenRepo struct {

@@ -9,13 +9,13 @@ import (
 	"github.com/zitadel/oidc/v2/pkg/op"
 	"gopkg.in/square/go-jose.v2"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/repository/keypair"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/repository/keypair"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 const (
@@ -29,7 +29,7 @@ const (
 	gracefulPeriod = 10 * time.Minute
 )
 
-//SigningKey wraps the query.PrivateKey to implement the op.SigningKey interface
+// SigningKey wraps the query.PrivateKey to implement the op.SigningKey interface
 type SigningKey struct {
 	algorithm jose.SignatureAlgorithm
 	id        string
@@ -48,7 +48,7 @@ func (s *SigningKey) ID() string {
 	return s.id
 }
 
-//PublicKey wraps the query.PublicKey to implement the op.Key interface
+// PublicKey wraps the query.PublicKey to implement the op.Key interface
 type PublicKey struct {
 	key query.PublicKey
 }
@@ -69,7 +69,7 @@ func (s *PublicKey) ID() string {
 	return s.key.ID()
 }
 
-//KeySet implements the op.Storage interface
+// KeySet implements the op.Storage interface
 func (o *OPStorage) KeySet(ctx context.Context) (keys []op.Key, err error) {
 	ctx, span := tracing.NewSpan(ctx)
 	defer func() { span.EndWithError(err) }()
@@ -87,7 +87,7 @@ func (o *OPStorage) KeySet(ctx context.Context) (keys []op.Key, err error) {
 	return keys, err
 }
 
-//SignatureAlgorithms implements the op.Storage interface
+// SignatureAlgorithms implements the op.Storage interface
 func (o *OPStorage) SignatureAlgorithms(ctx context.Context) ([]jose.SignatureAlgorithm, error) {
 	key, err := o.SigningKey(ctx)
 	if err != nil {
@@ -96,7 +96,7 @@ func (o *OPStorage) SignatureAlgorithms(ctx context.Context) ([]jose.SignatureAl
 	return []jose.SignatureAlgorithm{key.SignatureAlgorithm()}, nil
 }
 
-//SigningKey implements the op.Storage interface
+// SigningKey implements the op.Storage interface
 func (o *OPStorage) SigningKey(ctx context.Context) (key op.SigningKey, err error) {
 	err = retry(func() error {
 		key, err = o.getSigningKey(ctx)

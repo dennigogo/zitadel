@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 	"golang.org/x/text/language"
 )
 

@@ -7,15 +7,15 @@ import (
 
 	"github.com/zitadel/logging"
 
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/command/preparation"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	project_repo "github.com/zitadel/zitadel/internal/repository/project"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/command/preparation"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	project_repo "github.com/dennigogo/zitadel/internal/repository/project"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 type addOIDCApp struct {

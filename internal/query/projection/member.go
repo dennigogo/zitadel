@@ -1,11 +1,11 @@
 package projection
 
 import (
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/handler"
-	"github.com/zitadel/zitadel/internal/eventstore/handler/crdb"
-	"github.com/zitadel/zitadel/internal/repository/member"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/handler"
+	"github.com/dennigogo/zitadel/internal/eventstore/handler/crdb"
+	"github.com/dennigogo/zitadel/internal/repository/member"
 )
 
 const (

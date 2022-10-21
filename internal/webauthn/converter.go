@@ -3,7 +3,7 @@ package webauthn
 import (
 	"github.com/duo-labs/webauthn/protocol"
 	"github.com/duo-labs/webauthn/webauthn"
-	"github.com/zitadel/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/domain"
 )
 
 func WebAuthNsToCredentials(webAuthNs []*domain.WebAuthNToken) []webauthn.Credential {

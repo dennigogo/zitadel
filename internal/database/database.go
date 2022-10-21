@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"reflect"
 
-	_ "github.com/zitadel/zitadel/internal/database/cockroach"
-	"github.com/zitadel/zitadel/internal/database/dialect"
-	_ "github.com/zitadel/zitadel/internal/database/postgres"
-	"github.com/zitadel/zitadel/internal/errors"
+	_ "github.com/dennigogo/zitadel/internal/database/cockroach"
+	"github.com/dennigogo/zitadel/internal/database/dialect"
+	_ "github.com/dennigogo/zitadel/internal/database/postgres"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type Config struct {

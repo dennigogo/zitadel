@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 type AuthInterceptor struct {

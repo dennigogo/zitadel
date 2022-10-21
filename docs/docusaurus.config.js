@@ -73,7 +73,7 @@ module.exports = {
           position: "left",
         },
         {
-          href: "https://github.com/zitadel/zitadel",
+          href: "https://github.com/dennigogo/zitadel",
           label: "GitHub",
           position: "right",
         },
@@ -85,7 +85,7 @@ module.exports = {
         {
           label: "Discussions",
           position: "right",
-          href: "https://github.com/zitadel/zitadel/discussions",
+          href: "https://github.com/dennigogo/zitadel/discussions",
         },
       ],
     },
@@ -100,7 +100,7 @@ module.exports = {
             },
             {
               label: "GitHub Discussions",
-              href: "https://github.com/zitadel/zitadel/discussions",
+              href: "https://github.com/dennigogo/zitadel/discussions",
             },
             {
               label: "Twitter",
@@ -177,7 +177,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          editUrl: "https://github.com/zitadel/zitadel/edit/main/docs/",
+          editUrl: "https://github.com/dennigogo/zitadel/edit/main/docs/",
           remarkPlugins: [require("mdx-mermaid")],
         },
         theme: {

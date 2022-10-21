@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
 // SearchQueryBuilder represents the builder for your filter

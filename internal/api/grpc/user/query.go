@@ -1,10 +1,10 @@
 package user
 
 import (
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/query"
-	user_pb "github.com/zitadel/zitadel/pkg/grpc/user"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/query"
+	user_pb "github.com/dennigogo/zitadel/pkg/grpc/user"
 )
 
 func UserQueriesToQuery(queries []*user_pb.SearchQuery) (_ []query.SearchQuery, err error) {

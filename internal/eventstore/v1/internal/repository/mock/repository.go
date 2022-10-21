@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 	gomock "github.com/golang/mock/gomock"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
 )
 
 func NewMock(t *testing.T) *MockRepository {

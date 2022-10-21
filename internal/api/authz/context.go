@@ -4,10 +4,10 @@ import (
 	"context"
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/api/grpc"
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/grpc"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 type key int

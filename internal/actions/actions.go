@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
+	z_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/query"
 	"github.com/dop251/goja_nodejs/require"
-	z_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/query"
 )
 
 type Config struct {

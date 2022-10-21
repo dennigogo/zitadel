@@ -1,12 +1,12 @@
 package view
 
 import (
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	iam_model "github.com/zitadel/zitadel/internal/iam/model"
-	"github.com/zitadel/zitadel/internal/iam/repository/view"
-	iam_es_model "github.com/zitadel/zitadel/internal/iam/repository/view/model"
-	global_view "github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/model"
+	"github.com/dennigogo/zitadel/internal/iam/repository/view"
+	iam_es_model "github.com/dennigogo/zitadel/internal/iam/repository/view/model"
+	global_view "github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 type EventType string

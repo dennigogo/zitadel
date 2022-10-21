@@ -7,10 +7,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	grpc_util "github.com/zitadel/zitadel/internal/api/grpc"
-	"github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/telemetry/tracing"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	grpc_util "github.com/dennigogo/zitadel/internal/api/grpc"
+	"github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/telemetry/tracing"
 )
 
 func AuthorizationInterceptor(verifier *authz.TokenVerifier, authConfig authz.Config) grpc.UnaryServerInterceptor {

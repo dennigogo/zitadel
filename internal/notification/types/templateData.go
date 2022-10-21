@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/i18n"
-	"github.com/zitadel/zitadel/internal/notification/templates"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/i18n"
+	"github.com/dennigogo/zitadel/internal/notification/templates"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func GetTemplateData(translator *i18n.Translator, translateArgs map[string]interface{}, assetsPrefix, href, msgType, lang string, policy *query.LabelPolicy) templates.TemplateData {

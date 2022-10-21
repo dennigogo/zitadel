@@ -12,10 +12,10 @@ import (
 	"github.com/zitadel/oidc/v2/pkg/client/rp"
 	"github.com/zitadel/oidc/v2/pkg/oidc"
 
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	iam_model "github.com/zitadel/zitadel/internal/iam/model"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	iam_model "github.com/dennigogo/zitadel/internal/iam/model"
 )
 
 type jwtRequest struct {

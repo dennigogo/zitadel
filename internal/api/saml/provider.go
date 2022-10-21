@@ -8,16 +8,16 @@ import (
 
 	"github.com/zitadel/saml/pkg/provider"
 
-	http_utils "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/api/http/middleware"
-	"github.com/zitadel/zitadel/internal/api/ui/login"
-	"github.com/zitadel/zitadel/internal/auth/repository"
-	"github.com/zitadel/zitadel/internal/command"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/handler/crdb"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/telemetry/metrics"
+	http_utils "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/internal/api/ui/login"
+	"github.com/dennigogo/zitadel/internal/auth/repository"
+	"github.com/dennigogo/zitadel/internal/command"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/handler/crdb"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/telemetry/metrics"
 )
 
 const (

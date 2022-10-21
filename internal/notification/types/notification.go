@@ -3,13 +3,13 @@ package types
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/i18n"
-	"github.com/zitadel/zitadel/internal/notification/channels/fs"
-	"github.com/zitadel/zitadel/internal/notification/channels/log"
-	"github.com/zitadel/zitadel/internal/notification/channels/smtp"
-	"github.com/zitadel/zitadel/internal/notification/channels/twilio"
-	"github.com/zitadel/zitadel/internal/notification/templates"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/i18n"
+	"github.com/dennigogo/zitadel/internal/notification/channels/fs"
+	"github.com/dennigogo/zitadel/internal/notification/channels/log"
+	"github.com/dennigogo/zitadel/internal/notification/channels/smtp"
+	"github.com/dennigogo/zitadel/internal/notification/channels/twilio"
+	"github.com/dennigogo/zitadel/internal/notification/templates"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 type Notify func(

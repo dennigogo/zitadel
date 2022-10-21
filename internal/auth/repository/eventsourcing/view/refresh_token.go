@@ -1,12 +1,12 @@
 package view
 
 import (
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	user_model "github.com/zitadel/zitadel/internal/user/model"
-	usr_view "github.com/zitadel/zitadel/internal/user/repository/view"
-	"github.com/zitadel/zitadel/internal/user/repository/view/model"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	user_model "github.com/dennigogo/zitadel/internal/user/model"
+	usr_view "github.com/dennigogo/zitadel/internal/user/repository/view"
+	"github.com/dennigogo/zitadel/internal/user/repository/view/model"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 const (

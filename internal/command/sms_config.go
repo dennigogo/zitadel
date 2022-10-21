@@ -3,11 +3,11 @@ package command
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/notification/channels/twilio"
-	"github.com/zitadel/zitadel/internal/repository/instance"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/notification/channels/twilio"
+	"github.com/dennigogo/zitadel/internal/repository/instance"
 )
 
 func (c *Commands) AddSMSConfigTwilio(ctx context.Context, instanceID string, config *twilio.TwilioConfig) (string, *domain.ObjectDetails, error) {

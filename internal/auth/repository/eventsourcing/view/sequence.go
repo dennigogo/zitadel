@@ -3,8 +3,8 @@ package view
 import (
 	"time"
 
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 const (

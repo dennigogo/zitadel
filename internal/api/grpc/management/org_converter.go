@@ -3,15 +3,15 @@ package management
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	member_grpc "github.com/zitadel/zitadel/internal/api/grpc/member"
-	"github.com/zitadel/zitadel/internal/api/grpc/metadata"
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	org_grpc "github.com/zitadel/zitadel/internal/api/grpc/org"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/query"
-	mgmt_pb "github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	member_grpc "github.com/dennigogo/zitadel/internal/api/grpc/member"
+	"github.com/dennigogo/zitadel/internal/api/grpc/metadata"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	org_grpc "github.com/dennigogo/zitadel/internal/api/grpc/org"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/query"
+	mgmt_pb "github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 func ListOrgDomainsRequestToModel(req *mgmt_pb.ListOrgDomainsRequest) (*query.OrgDomainSearchQueries, error) {

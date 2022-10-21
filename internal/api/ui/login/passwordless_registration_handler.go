@@ -6,10 +6,10 @@ import (
 
 	"github.com/zitadel/logging"
 
-	http_mw "github.com/zitadel/zitadel/internal/api/http/middleware"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/query"
+	http_mw "github.com/dennigogo/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 const (

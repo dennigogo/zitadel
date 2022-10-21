@@ -3,8 +3,8 @@ package login
 import (
 	"net/http"
 
-	http_mw "github.com/zitadel/zitadel/internal/api/http/middleware"
-	"github.com/zitadel/zitadel/internal/domain"
+	http_mw "github.com/dennigogo/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/internal/domain"
 )
 
 const (

@@ -3,12 +3,12 @@ package command
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 
 	"golang.org/x/text/language"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/repository/user"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/repository/user"
 )
 
 type HumanProfileWriteModel struct {

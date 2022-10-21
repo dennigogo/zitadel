@@ -6,14 +6,14 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/zitadel/zitadel/internal/api/assets"
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/grpc/server"
-	"github.com/zitadel/zitadel/internal/command"
-	"github.com/zitadel/zitadel/internal/config/systemdefaults"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/assets"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/grpc/server"
+	"github.com/dennigogo/zitadel/internal/command"
+	"github.com/dennigogo/zitadel/internal/config/systemdefaults"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 const (

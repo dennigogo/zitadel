@@ -5,8 +5,10 @@ ARG NODE_VERSION=16
 ## Speed up this step by mounting your local node_modules directory
 ## We also copy and generate the source code
 #######################
-FROM node:${NODE_VERSION} as npm-base
+FROM amd64/node:${NODE_VERSION}-buster as npm-base
 WORKDIR /console
+
+RUN apt update && apt install -y protobuf-compiler && npm install -g protoc-gen-grpc-web && apt clean
 
 # Dependencies
 COPY console/package.json console/package-lock.json ./
@@ -15,7 +17,6 @@ RUN npm ci
 # Sources
 COPY console .
 COPY --from=zitadel-base:local /proto /proto
-COPY --from=zitadel-base:local /usr/local/bin /usr/local/bin/.
 COPY build/console build/console/
 RUN build/console/generate-grpc.sh
 

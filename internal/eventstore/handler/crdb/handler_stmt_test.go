@@ -12,11 +12,11 @@ import (
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/eventstore/handler"
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
-	es_repo_mock "github.com/zitadel/zitadel/internal/eventstore/repository/mock"
-	"github.com/zitadel/zitadel/internal/id"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore/handler"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
+	es_repo_mock "github.com/dennigogo/zitadel/internal/eventstore/repository/mock"
+	"github.com/dennigogo/zitadel/internal/id"
 )
 
 var (

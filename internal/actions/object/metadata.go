@@ -7,8 +7,8 @@ import (
 	"github.com/dop251/goja"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/actions"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/actions"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func UserMetadataListFromQuery(c *actions.FieldConfig, metadata *query.UserMetadataList) goja.Value {

@@ -3,9 +3,9 @@ package types
 import (
 	"strings"
 
-	"github.com/zitadel/zitadel/internal/api/ui/login"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/api/ui/login"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func (notify Notify) SendDomainClaimed(user *query.NotifyUser, origin, username string) error {

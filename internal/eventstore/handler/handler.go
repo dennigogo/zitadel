@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/zitadel/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/eventstore"
 )
 
 type HandlerConfig struct {

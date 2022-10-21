@@ -9,7 +9,7 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"github.com/zitadel/logging"
 
-	"github.com/zitadel/zitadel/internal/database/dialect"
+	"github.com/dennigogo/zitadel/internal/database/dialect"
 )
 
 const (

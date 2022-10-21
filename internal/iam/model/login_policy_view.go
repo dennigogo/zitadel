@@ -3,8 +3,8 @@ package model
 import (
 	"time"
 
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type LoginPolicyView struct {

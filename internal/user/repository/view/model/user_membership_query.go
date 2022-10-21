@@ -1,9 +1,9 @@
 package model
 
 import (
-	"github.com/zitadel/zitadel/internal/domain"
-	usr_model "github.com/zitadel/zitadel/internal/user/model"
-	"github.com/zitadel/zitadel/internal/view/repository"
+	"github.com/dennigogo/zitadel/internal/domain"
+	usr_model "github.com/dennigogo/zitadel/internal/user/model"
+	"github.com/dennigogo/zitadel/internal/view/repository"
 )
 
 type UserMembershipSearchRequest usr_model.UserMembershipSearchRequest

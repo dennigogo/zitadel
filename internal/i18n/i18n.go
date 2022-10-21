@@ -15,9 +15,9 @@ import (
 	"golang.org/x/text/language"
 	"sigs.k8s.io/yaml"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/errors"
 )
 
 const (

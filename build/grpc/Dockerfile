@@ -1,12 +1,9 @@
-#ARG BUILDARCH=x86_64
+ARG BUILDARCH=x86_64
 
 #######################
 ## These steps set platform / arch type specific variables
 #######################
-FROM alpine:3 AS arm64-base
-ENV PROTOC_ARCH aarch_64
-
-FROM alpine:3 AS amd64-base
+FROM alpine:3 AS x86_64-base
 ENV PROTOC_ARCH x86_64
 
 #######################
@@ -16,7 +13,7 @@ ENV PROTOC_ARCH x86_64
 ## protoc and protoc-gen-grpc-web for later use
 #######################
 FROM ${BUILDARCH}-base
-ARG PROTOC_VERSION=3.18.0
+ARG PROTOC_VERSION=21.8
 ARG PROTOC_ZIP=protoc-${PROTOC_VERSION}-linux-${PROTOC_ARCH}.zip
 ARG GRPC_WEB_VERSION=1.3.0
 ARG GATEWAY_VERSION=2.6.0

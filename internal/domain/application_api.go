@@ -1,8 +1,8 @@
 package domain
 
 import (
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
 )
 
 type APIApp struct {

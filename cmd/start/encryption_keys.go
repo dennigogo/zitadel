@@ -1,8 +1,8 @@
 package start
 
 import (
-	"github.com/zitadel/zitadel/internal/crypto"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 var (

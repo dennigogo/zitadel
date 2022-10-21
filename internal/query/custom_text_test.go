@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/text/language"
 
-	errs "github.com/zitadel/zitadel/internal/errors"
+	errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 func Test_CustomTextPrepares(t *testing.T) {

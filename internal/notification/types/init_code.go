@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/zitadel/zitadel/internal/api/ui/login"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/api/ui/login"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 func (notify Notify) SendUserInitCode(user *query.NotifyUser, origin, code string) error {

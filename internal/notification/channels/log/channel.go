@@ -5,8 +5,8 @@ import (
 
 	"github.com/k3a/html2text"
 
+	"github.com/dennigogo/zitadel/internal/notification/channels"
 	"github.com/zitadel/logging"
-	"github.com/zitadel/zitadel/internal/notification/channels"
 )
 
 func InitStdoutChannel(config LogConfig) channels.NotificationChannel {

@@ -1,4 +1,4 @@
-module github.com/zitadel/zitadel
+module github.com/dennigogo/zitadel
 
 go 1.19
 

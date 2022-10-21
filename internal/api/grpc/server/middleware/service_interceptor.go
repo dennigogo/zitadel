@@ -3,8 +3,8 @@ package middleware
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/service"
-	_ "github.com/zitadel/zitadel/internal/statik"
+	"github.com/dennigogo/zitadel/internal/api/service"
+	_ "github.com/dennigogo/zitadel/internal/statik"
 	"google.golang.org/grpc"
 )
 

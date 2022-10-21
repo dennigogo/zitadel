@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/dennigogo/zitadel/internal/errors"
 	"github.com/dop251/goja"
-	"github.com/zitadel/zitadel/internal/errors"
 )
 
 func Test_isHostBlocked(t *testing.T) {

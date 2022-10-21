@@ -5,15 +5,15 @@ import (
 
 	"github.com/zitadel/logging"
 
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/eventstore"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	es_models "github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/query"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/spooler"
-	"github.com/zitadel/zitadel/internal/repository/project"
-	"github.com/zitadel/zitadel/internal/repository/user"
-	view_model "github.com/zitadel/zitadel/internal/user/repository/view/model"
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	es_models "github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/query"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/spooler"
+	"github.com/dennigogo/zitadel/internal/repository/project"
+	"github.com/dennigogo/zitadel/internal/repository/user"
+	view_model "github.com/dennigogo/zitadel/internal/user/repository/view/model"
 )
 
 const (

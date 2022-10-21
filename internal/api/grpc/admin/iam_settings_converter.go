@@ -3,15 +3,15 @@ package admin
 import (
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"github.com/zitadel/zitadel/internal/api/grpc/object"
-	obj_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/crypto"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/internal/notification/channels/smtp"
-	"github.com/zitadel/zitadel/internal/query"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
-	settings_pb "github.com/zitadel/zitadel/pkg/grpc/settings"
+	"github.com/dennigogo/zitadel/internal/api/grpc/object"
+	obj_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/notification/channels/smtp"
+	"github.com/dennigogo/zitadel/internal/query"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
+	settings_pb "github.com/dennigogo/zitadel/pkg/grpc/settings"
 )
 
 func listSecretGeneratorToModel(req *admin_pb.ListSecretGeneratorsRequest) (*query.SecretGeneratorSearchQueries, error) {

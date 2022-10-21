@@ -3,17 +3,17 @@ package auth
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/grpc/change"
-	"github.com/zitadel/zitadel/internal/api/grpc/metadata"
-	obj_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	"github.com/zitadel/zitadel/internal/api/grpc/org"
-	user_grpc "github.com/zitadel/zitadel/internal/api/grpc/user"
-	"github.com/zitadel/zitadel/internal/command"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/eventstore/v1/models"
-	"github.com/zitadel/zitadel/internal/query"
-	auth_pb "github.com/zitadel/zitadel/pkg/grpc/auth"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/grpc/change"
+	"github.com/dennigogo/zitadel/internal/api/grpc/metadata"
+	obj_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	"github.com/dennigogo/zitadel/internal/api/grpc/org"
+	user_grpc "github.com/dennigogo/zitadel/internal/api/grpc/user"
+	"github.com/dennigogo/zitadel/internal/command"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/eventstore/v1/models"
+	"github.com/dennigogo/zitadel/internal/query"
+	auth_pb "github.com/dennigogo/zitadel/pkg/grpc/auth"
 )
 
 func (s *Server) GetMyUser(ctx context.Context, _ *auth_pb.GetMyUserRequest) (*auth_pb.GetMyUserResponse, error) {

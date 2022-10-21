@@ -3,9 +3,9 @@ package errors
 import (
 	"context"
 
+	caos_errs "github.com/dennigogo/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/pkg/grpc/message"
 	"github.com/zitadel/logging"
-	caos_errs "github.com/zitadel/zitadel/internal/errors"
-	"github.com/zitadel/zitadel/pkg/grpc/message"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

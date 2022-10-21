@@ -5,9 +5,9 @@ import (
 
 	"github.com/zitadel/oidc/v2/pkg/oidc"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	"github.com/zitadel/zitadel/internal/api/http"
-	mgmt_pb "github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	"github.com/dennigogo/zitadel/internal/api/http"
+	mgmt_pb "github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 func (s *Server) Healthz(context.Context, *mgmt_pb.HealthzRequest) (*mgmt_pb.HealthzResponse, error) {

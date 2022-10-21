@@ -1,9 +1,9 @@
 package admin
 
 import (
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/view/model"
-	admin_pb "github.com/zitadel/zitadel/pkg/grpc/admin"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/view/model"
+	admin_pb "github.com/dennigogo/zitadel/pkg/grpc/admin"
 )
 
 func FailedEventsViewToPb(failedEvents []*model.FailedEvent) []*admin_pb.FailedEvent {

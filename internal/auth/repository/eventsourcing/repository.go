@@ -4,17 +4,17 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/eventstore"
-	"github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/spooler"
-	auth_view "github.com/zitadel/zitadel/internal/auth/repository/eventsourcing/view"
-	"github.com/zitadel/zitadel/internal/auth_request/repository/cache"
-	"github.com/zitadel/zitadel/internal/command"
-	sd "github.com/zitadel/zitadel/internal/config/systemdefaults"
-	"github.com/zitadel/zitadel/internal/crypto"
-	v1 "github.com/zitadel/zitadel/internal/eventstore/v1"
-	es_spol "github.com/zitadel/zitadel/internal/eventstore/v1/spooler"
-	"github.com/zitadel/zitadel/internal/id"
-	"github.com/zitadel/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/eventstore"
+	"github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/spooler"
+	auth_view "github.com/dennigogo/zitadel/internal/auth/repository/eventsourcing/view"
+	"github.com/dennigogo/zitadel/internal/auth_request/repository/cache"
+	"github.com/dennigogo/zitadel/internal/command"
+	sd "github.com/dennigogo/zitadel/internal/config/systemdefaults"
+	"github.com/dennigogo/zitadel/internal/crypto"
+	v1 "github.com/dennigogo/zitadel/internal/eventstore/v1"
+	es_spol "github.com/dennigogo/zitadel/internal/eventstore/v1/spooler"
+	"github.com/dennigogo/zitadel/internal/id"
+	"github.com/dennigogo/zitadel/internal/query"
 )
 
 type Config struct {

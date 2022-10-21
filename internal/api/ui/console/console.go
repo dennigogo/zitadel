@@ -15,10 +15,10 @@ import (
 	"github.com/zitadel/logging"
 	"github.com/zitadel/oidc/v2/pkg/op"
 
-	"github.com/zitadel/zitadel/cmd/build"
-	"github.com/zitadel/zitadel/internal/api/authz"
-	http_util "github.com/zitadel/zitadel/internal/api/http"
-	"github.com/zitadel/zitadel/internal/api/http/middleware"
+	"github.com/dennigogo/zitadel/cmd/build"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	http_util "github.com/dennigogo/zitadel/internal/api/http"
+	"github.com/dennigogo/zitadel/internal/api/http/middleware"
 )
 
 type Config struct {
@@ -65,8 +65,8 @@ func (i *spaHandler) Open(name string) (http.File, error) {
 	return &file{File: f}, nil
 }
 
-//file wraps the http.File and fs.FileInfo interfaces
-//to return the build.Date() as ModTime() of the file
+// file wraps the http.File and fs.FileInfo interfaces
+// to return the build.Date() as ModTime() of the file
 type file struct {
 	http.File
 	fs.FileInfo

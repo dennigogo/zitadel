@@ -3,10 +3,10 @@ package instance
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/eventstore"
-	"github.com/zitadel/zitadel/internal/repository/settings"
+	"github.com/dennigogo/zitadel/internal/eventstore"
+	"github.com/dennigogo/zitadel/internal/repository/settings"
 
-	"github.com/zitadel/zitadel/internal/eventstore/repository"
+	"github.com/dennigogo/zitadel/internal/eventstore/repository"
 )
 
 const (

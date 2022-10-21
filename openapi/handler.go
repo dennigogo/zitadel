@@ -6,7 +6,7 @@ import (
 	"github.com/rakyll/statik/fs"
 	"github.com/rs/cors"
 
-	_ "github.com/zitadel/zitadel/openapi/statik"
+	_ "github.com/dennigogo/zitadel/openapi/statik"
 )
 
 const (

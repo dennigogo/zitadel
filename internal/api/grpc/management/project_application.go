@@ -3,14 +3,14 @@ package management
 import (
 	"context"
 
-	"github.com/zitadel/zitadel/internal/api/authz"
-	authn_grpc "github.com/zitadel/zitadel/internal/api/grpc/authn"
-	change_grpc "github.com/zitadel/zitadel/internal/api/grpc/change"
-	object_grpc "github.com/zitadel/zitadel/internal/api/grpc/object"
-	project_grpc "github.com/zitadel/zitadel/internal/api/grpc/project"
-	"github.com/zitadel/zitadel/internal/domain"
-	"github.com/zitadel/zitadel/internal/query"
-	mgmt_pb "github.com/zitadel/zitadel/pkg/grpc/management"
+	"github.com/dennigogo/zitadel/internal/api/authz"
+	authn_grpc "github.com/dennigogo/zitadel/internal/api/grpc/authn"
+	change_grpc "github.com/dennigogo/zitadel/internal/api/grpc/change"
+	object_grpc "github.com/dennigogo/zitadel/internal/api/grpc/object"
+	project_grpc "github.com/dennigogo/zitadel/internal/api/grpc/project"
+	"github.com/dennigogo/zitadel/internal/domain"
+	"github.com/dennigogo/zitadel/internal/query"
+	mgmt_pb "github.com/dennigogo/zitadel/pkg/grpc/management"
 )
 
 func (s *Server) GetAppByID(ctx context.Context, req *mgmt_pb.GetAppByIDRequest) (*mgmt_pb.GetAppByIDResponse, error) {

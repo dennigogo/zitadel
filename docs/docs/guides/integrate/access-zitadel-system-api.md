@@ -83,7 +83,7 @@ If your system is exposed without TLS or on a dedicated port, be sure to provide
 
 ### ZITADEL Tools
 
-If you want to manually create a JWT for a test, you can also use our [ZITADEL Tools](https://github.com/zitadel/zitadel-tools). Download the latest release and run:
+If you want to manually create a JWT for a test, you can also use our [ZITADEL Tools](https://github.com/dennigogo/zitadel-tools). Download the latest release and run:
 
 ```bash
 ./key2jwt -audience=https://custom-domain.com -key=system-user-1.pem -issuer=system-user-1

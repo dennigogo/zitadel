@@ -34,7 +34,7 @@ TBD
 
 ## Public Disclosure
 
-All accepted and mitigated vulnerabilities will be published on [ZITADEL's GitHub Security Page](https://github.com/zitadel/zitadel/security/advisories).
+All accepted and mitigated vulnerabilities will be published on [ZITADEL's GitHub Security Page](https://github.com/dennigogo/zitadel/security/advisories).
 
 ### Timing
 

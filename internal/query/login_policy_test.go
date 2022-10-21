@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zitadel/zitadel/internal/database"
-	"github.com/zitadel/zitadel/internal/domain"
-	errs "github.com/zitadel/zitadel/internal/errors"
+	"github.com/dennigogo/zitadel/internal/database"
+	"github.com/dennigogo/zitadel/internal/domain"
+	errs "github.com/dennigogo/zitadel/internal/errors"
 )
 
 func Test_LoginPolicyPrepares(t *testing.T) {

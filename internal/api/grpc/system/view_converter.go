@@ -1,9 +1,9 @@
 package system
 
 import (
-	"github.com/zitadel/zitadel/internal/query"
-	"github.com/zitadel/zitadel/internal/view/model"
-	system_pb "github.com/zitadel/zitadel/pkg/grpc/system"
+	"github.com/dennigogo/zitadel/internal/query"
+	"github.com/dennigogo/zitadel/internal/view/model"
+	system_pb "github.com/dennigogo/zitadel/pkg/grpc/system"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
